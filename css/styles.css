@@ -1,8 +1,314 @@
-header {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  font-family: 'georgia', sans-serif;
-  color: #222;
-  background: #f7f5f0;
-}
+  {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Georgia, Helvetica, sans-serif';
+    font-size: 1em;
+    line-height: 1;
+    color: #black;
+    background-color:#D1F2EB;
+    text-align: center;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Georgia, Helvetica, sans-serif';
+    color: black;
+    margin: 0;
+  }
+
+  h1 {
+    padding: 1em 0 1em;
+    font-size: 2em;
+    line-height: 1;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    line-height: 1;
+    padding: 3em;
+    color: black;
+  }
+
+  h3 {
+    font-size: 1.2em
+    line-height:1;
+  }
+
+  header {
+    padding-bottom: 2;
+  }
+  .profile-picture {
+    float: right;
+    width: 25%;
+    border-radius: 50%;
+  }
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .main-header {
+    margin-bottom: 3em;
+  }
+  .welcome {
+    background-color:#138D75 ;
+  }
+
+  #portfolio {
+    text-align: center;
+  }
+
+  .student-name {
+      transition: width 2s;
+    }
+
+  img {
+    max-width: 100%;
+  }
+
+  .container {
+    width: 95%;
+    margin:auto;
+    text-align: left;
+  }
+
+  .main-header {
+    margin-bottom: 2em;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    list-style:none;
+    background-color: #138D75;
+    margin-bottom: 1em;
+  }
+
+  nav ul li a {
+    display: block;
+    font-family: sans-serif;
+    color: yellow;
+    text-decoration: underline;
+    padding: .5em;
+    transition: all .2s;
+  }
+
+  nav ul li a:hover {
+    background-color: lightgrey;
+    color: yellow;
+  }
+
+  .banner {
+    width: 85%
+    margin: 0 auto;
+  }
+
+  main {
+    background: white;
+    padding: 1.5em;
+  }
+
+  #portfolio, #skills {
+    padding-top: 2em
+  }
+
+  .project, .project img {
+    margin-bottom: 1.5em;
+  }
+
+  .project p {
+    margin-top: .5em;
+    margin-bottom: 2.5em;
+    padding: 0 2em;
+  }
+
+  .wrapper {
+    width: 100%;
+    background-color: #138D75 ;
+    padding-bottom: 4em;
+  }
+
+  .skill-list {
+    margin: 0 1.5em;
+    padding:0;
+  }
+
+  .skill-list li {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px black;
+    color: white;
+    background-color: #76D7C4;
+    padding: 1em;
+    width: 75%;
+    font-size: 1.5em;
+    margin-bottom: .5em;
+  }
+
+  .contact-info {
+    max-width: 360px;
+  }
+
+  .skill-list li:hover {
+    opacity: .8;
+  }
+
+  .skill-list i {
+    padding-right: .5em;
+  }
+
+  footer {
+    margin-top: 4em;
+  }
+  #contact h2 {
+    padding-bottom: 1em;
+    width: auto;
+  }
+  address {
+    font-style: normal;
+    padding-left: 4em;
+  }
+
+  address span a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  address span a:hover {
+    border-bottom: 2px solid black;
+    color: black;
+  }
+
+  .credit {
+    border-top: 1px solid black;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1em;
+    font-size: 1em;
+    font-family: 'Georgia, Helvetica, sans-serif';
+  }
+
+  .credit p {
+    color: black;
+    float: left;
+  }
+
+  .credit p + p {
+    text-transform: uppercase;
+    float: right;
+  }
+
+  .credit p a:hover {
+  background-color: purple;
+  color: white;
+  }
+
+  .footer-nav {
+    display: none;
+  }
+
+  @media (min-width: 1024px) {
+    .main-header {
+      min-height: 4em;
+      margin-top: 2em;
+      margin-bottom: 6em;
+    }
+
+    .student-name {
+      float: right;
+      margin-right: 32px;
+    }
+    .welcome {
+      font-size: 1.5em;
+      width: 100%
+      padding: 5rem;
+    }
+    .profile-pic {
+      width: 33%;
+      padding-right: 32px;
+      border-radius: 25%;
+    }
+    .project {
+      width: 50%;
+      padding: .5em;
+    }
+    .contact-info {
+      width: 30%;
+    }
+    footer {
+      padding: 0;
+    }
+  }
+
+
+  @media (min-width: 768px) {
+    nav ul {
+      display: block;
+      margin: auto;
+    }
+    nav ul li {
+      float: left;
+      background-color: transparent;
+    }
+    .banner {
+      width: 100%;
+    }
+    .profile-picture {
+      float: right;
+      width: 25%;
+      border-radius: 80%;
+    }
+    .welcome {
+      float: left;
+      width: 65%;
+      margin-top: 0;
+      padding: 0 1em;
+      font-size: 1.2em;
+      text-align: left;
+    }
+    .project {
+      float: left;
+      width: 50%;
+      margin: 0.5em;
+      padding: 1em;
+    }
+    .project p {
+      height: 4em;
+    }
+    .skill-list li {
+      float:left;
+      max-width: 25%;
+    }
+    .contact-info {
+      font-size: 1.266em;
+      max-width: 75%;
+      margin: 0 auto;
+    }
+    .container {
+      text-align: center;
+      max-width: 360px;
+    }
+    footer {
+      width: 100%;
+      padding: 1.5em;
+    }
+    .footer-nav {
+      display: block;
+      text-align: center;
+    }
+    .footer-nav ul li a {
+      color: black;
+    }
+    .footer-nav ul li a:hover {
+      background-color: papayawhip;
+      color: white;
+    }
+    .credit p a {
+      display: none;
+    }
+  }
