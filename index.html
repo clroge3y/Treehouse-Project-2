@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 </head>
 
 <body>
@@ -23,7 +24,7 @@
       </ul>
     </nav>
     </div>
-    <div class="banner">
+    <div class="banner clearfix">
       <img class="profile-picture" src="images/Tina.jpg" alt="Tina Henson Profile Picture">
       <p class="welcome"> Hello and Welcome! My name is Tina Henson, and I've recently finished my degree in Front End
         Web Development at Treehouse. I'm super excited to put the skills I've learned here to good use.
@@ -33,7 +34,7 @@
   </header>
 
   <main>
-    <div id="portfolio" class="container">
+    <div id="portfolio" class="container clearfix">
 
       <h2>Portfolio</h2>
 
@@ -76,26 +77,25 @@
     </div>
   </main>
 
-  <div id="skills" class="wrapper">
+  <div id="skills" class="wrapper clearfix">
     <h2>Skills</h2>
     <ul class="skill-list">
-      <li>HTML5</li>
-      <li>CSS3</li>
-      <li>Git</li>
-      <li>Github</li>
+      <li><i class="fab fa-html5" style="color: #3a86ff;"></i>HTML5</li>
+      <li><i class="fab fa-css3-alt" style="color: #72efdd;"></i>CSS3</li>
+      <li><i class="fab fa-git-square" style="color: #8338ec;"></i>Git</li>
+      <li><i class="fab fa-github-alt" style="color: #ff006e;"></i>Github</li>
     </ul>
   </div>
 
-  <footer class="footer">
-    <address class="container" id="contact">
+  <footer class="clearfix">
+    <div class="container" id="contact">
       <h2>Contact</h2>
-      <p class="contact-info">
+      <address class="contact-info">
         If you're interested in chatting or want more information about what I've been working on,
         I'd love to hear from you!
-      </p>
       <p>Phone: <span>804-548-6255</span></p>
       <p>Email: <span><a href="mailto:clroge3y@gmail.com">EMAIL ME!</a></span></p>
-    </address>
+     </address>
 
     <div class="credit">
       <p>Tina Henson</p>
@@ -109,6 +109,7 @@
         </ul>
       </nav>
       </div>
+    </div>
     </footer>
   </body>
   </html>
